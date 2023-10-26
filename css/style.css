@@ -1,0 +1,284 @@
+/*! -------- RESET ------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gold;
+    font-family: 'Abril Fatface', cursive;
+}
+/*! -------- HEADER ------*/
+
+header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+header div {
+    margin: 20px;
+}
+
+header div img {
+    border: 7px solid black;
+    border-radius: 20%
+}
+
+h1 {
+    font-size: 50px;
+    font-style: italic;
+    background-color: white;
+    border: 5px solid black;
+}
+
+header div nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+header div nav ul li {
+    margin-bottom: 10px;
+}
+
+header div nav ul a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+}
+
+
+/*! -------- MAIN ------*/
+
+
+.texto-bienvenida {
+    font-size: 100%;
+    border: 5px solid black;
+    text-align: center;
+    margin: 40px;
+    background-image: url("../img/eemp-logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.texto-bienvenida h2 {
+    color: white;
+    text-shadow: 7px 7px 7px black;
+    background-color: rgba(0, 0, 0, 0.689);
+    font-size: 3.5rem;
+}
+
+.descripcion {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.descripcion p {
+    height: 100%;
+    flex: 1;
+    margin-right: 20px;
+    padding: 25px;
+    font-size: 100%;
+    background-size: 100%;
+    background-color: white;
+    border: 5px solid black;
+}
+
+.descripcion img {
+    max-width: 100%;
+    flex: 1;
+}
+
+.instrumentos-index {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.instrumentos-index div {
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: 7px solid black;
+    border-radius: 20%;
+}
+
+.instrumentos-index div img {
+    margin: 5%;
+    border: 7px solid black;
+    border-radius: 20%
+    
+}
+
+.instrumentos-index div a {
+    margin-bottom: 20px;
+    color: black;
+    background-color: gold;
+}
+
+.consultas-instrumentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+/*! -------- FOOTER ------*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.horarios{
+    height: 280px;
+    border: 7px solid white;
+}
+
+.horarios ul {
+    width: calc(100% - 20px);
+    margin: 10px;
+    font-size: 26px;
+    text-align: center;
+    background-color: black;
+    list-style: none;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.instagram-footer {
+    text-align: center;
+}
+
+.instagram-footer h3 {
+    font-size: 50px;
+}
+
+.instagram-footer img {
+    max-width: 100%;
+}
+
+.mapa-escuela {
+    text-align: center;
+}
+
+
+/* SOBRE LA ESCUELA */
+
+.historia-escuela {
+    text-align: center;
+}
+
+.historia-escuela img {
+    max-width: 100%;
+}
+
+.historia-escuela div {
+    background-color: white;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+/* INSTRUMENTOS Y PROFESORES */
+
+.instrumento {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    background-color: white;
+    border: 7px solid black;
+}
+
+.instrumento img {
+    max-width: 50%;
+}
+
+.instrumento .descripcion-profesor {
+    flex: 1;
+    text-align: left;
+    margin: 10px;
+}
+
+
+/* DÍAS Y HORARIOS */
+
+.excel-horarios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.excel-horarios img{
+    border: 10px solid black;
+    width: 85%;
+    height: 85%;
+}
+
+
+
+
+
+
+/* CONTACTO */
+
+.cuadro-contacto{
+    text-align: center;
+    background-color: white;
+    border: 3px solid black;
+    margin: 20px;
+}
+
+
+
+/* MEDIA QUERY (siempre aplicarlo ANTES que se rompa el sitio) */
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna en tablets */
+        text-align: center;
+    }
+
+    header div {
+        margin: 10px;
+    }
+
+    header div img {
+        max-width: 80%; /* Reduce el ancho de la imagen en tablets */
+    }
+
+    h1 {
+        font-size: 40px; /* Reduce el tamaño del encabezado en tablets */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header div img {
+        max-width: 60%; /* Reduce aún más el ancho de la imagen en celulares */
+    }
+
+    h1 {
+        font-size: 30px; /* Reduce el tamaño del encabezado en celulares */
+    }
+
+    header div nav ul a {
+        font-size: 16px; /* Reduce el tamaño de fuente de los enlaces en celulares */
+    }
+}
