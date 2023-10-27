@@ -43,14 +43,15 @@ header div nav ul {
 
 header div nav ul li {
     margin-bottom: 10px;
+    background-color: white;
+    border: 3px solid black;
+    text-align: center;
 }
 
 header div nav ul a {
     font-size: 20px;
     text-decoration: none;
     color: black;
-    background-color: white;
-    border: 3px solid black;
 }
 
 
@@ -196,6 +197,11 @@ footer {
     margin: 10px;
 }
 
+.galeria-imagenes h2 {
+    text-align: center;
+    font-size: 70px;
+}
+
 /* INSTRUMENTOS Y PROFESORES */
 
 .instrumento {
@@ -280,5 +286,31 @@ footer {
 
     header div nav ul a {
         font-size: 16px; /* Reduce el tamaño de fuente de los enlaces en celulares */
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header div img {
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 30px; /* Puedes ajustar el tamaño de la fuente según tus preferencias */
+    }
+
+    header div nav ul {
+        flex-direction: row; /* Cambia la dirección de flexión a horizontal */
+        text-align: center;
+    }
+
+    header div nav ul li {
+        margin-right: 10px;
+        margin-bottom: 0;
     }
 }
