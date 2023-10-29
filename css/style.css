@@ -81,17 +81,22 @@ header div nav ul a {
     gap: 20px;
 }
 
-.descripcion img {
-    max-width: 75%;
-    flex: 1;
+.carousel-image {
+    width: 50%;
+    height: 50%;
+}
+
+.carousel-inner .carousel-item {
+    transition: none;
 }
 
 .descripcion p {
+    width: 100%;
     height: 100%;
     flex: 1;
     margin-right: 20px;
     padding: 25px;
-    font-size: 100%;
+    font-size: 12px;
     background-size: 100%;
     background-color: white;
     border: 5px solid black;
