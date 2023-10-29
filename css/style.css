@@ -59,7 +59,6 @@ header div nav ul a {
 
 
 .texto-bienvenida {
-    font-size: 100%;
     border: 5px solid black;
     text-align: center;
     margin: 40px;
@@ -73,13 +72,18 @@ header div nav ul a {
     color: white;
     text-shadow: 7px 7px 7px black;
     background-color: rgba(0, 0, 0, 0.689);
-    font-size: 3.5rem;
+    font-size: 55px;
 }
 
 .descripcion {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.descripcion img {
+    max-width: 75%;
+    flex: 1;
 }
 
 .descripcion p {
@@ -93,14 +97,9 @@ header div nav ul a {
     border: 5px solid black;
 }
 
-.descripcion img {
-    max-width: 100%;
-    flex: 1;
-}
-
 .instrumentos-index {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -142,6 +141,7 @@ header div nav ul a {
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
     background-color: black;
@@ -156,7 +156,7 @@ footer {
 .horarios ul {
     width: calc(100% - 20px);
     margin: 10px;
-    font-size: 26px;
+    font-size: 27px;
     text-align: center;
     background-color: black;
     list-style: none;
@@ -178,6 +178,10 @@ footer {
 
 .mapa-escuela {
     text-align: center;
+}
+
+.mapa-escuela h3{
+    font-size: 35px;
 }
 
 
@@ -211,8 +215,8 @@ footer {
 }
 
 .galeria-imagenes div img {
-    width: 500px;
-    height: 500px;
+    width: 95%;
+    height: 95%;
     border: 5px solid black;
     box-shadow: 5px 5px 5px gray;
     transition: transform 0.2s;
@@ -249,7 +253,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
 }
 
 .excel-horarios img{
@@ -276,3 +282,131 @@ footer {
 
 /* MEDIA QUERY (siempre aplicarlo ANTES que se rompa el sitio) */
 
+@media screen and (max-width: 1366px) {
+    .texto-bienvenida h2 {
+        font-size: 45px;
+    }
+
+    .descripcion{
+        display: block;
+        text-align: center;
+    }
+    .descripcion p {
+        margin: 15px;
+    }
+
+    .consultas-instrumentos{
+       display: none;
+       /* puse "display: none;" ya que no sabía cómo modificar el solo este elemento */
+    }
+
+    footer {
+        flex-wrap: nowrap;
+      }
+    
+    .horarios ul {
+        font-size: 23px;
+    }
+
+    .mapa-escuela h3{
+        font-size: 15px;
+    }
+
+    .historia-escuela img {
+        max-width: 75%;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header div {
+        margin: 10px;
+    }
+
+    header div img {
+        order: 1;
+        margin-bottom: 10px;
+    }
+
+    header div h1 {
+        order: 2;
+        font-size: 30px;
+    }
+
+    header div nav ul {
+        flex-direction: row;
+    }
+
+    header div nav ul li{
+        margin: 5px;
+    }
+
+    header div nav ul li a {
+        font-size: 18px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer section {
+        margin: 20px;
+    }
+
+    .horarios {
+        flex: 1;
+        border: 7px solid white;
+        margin: 10px;
+        text-align: center;
+    }
+    
+    
+    .instagram-footer h3 {
+        font-size: 40px;
+    }
+
+    .galeria-imagenes h2 {
+        font-size: 50px;
+    }
+
+    .galeria-imagenes div {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 500px);
+        grid-gap: 10px;
+    }
+    
+    .galeria-imagenes div img {
+        width: 95%;
+        height: 55%;
+    }
+    
+    .excel-horarios img {
+        height: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header div h1 {
+        font-size: 20px;
+    }
+
+    header div nav ul li a {
+        font-size: 13px;
+    }
+
+    .texto-bienvenida h2 {
+        font-size: 38px;
+    }
+
+    .galeria-imagenes div {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 500px);
+        grid-gap: 0;
+    }
+}
