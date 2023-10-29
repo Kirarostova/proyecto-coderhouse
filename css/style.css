@@ -4,11 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Abril Fatface', cursive;
 }
 
 body {
     background-color: gold;
-    font-family: 'Abril Fatface', cursive;
 }
 /*! -------- HEADER ------*/
 
@@ -161,7 +161,7 @@ footer {
 .horarios ul {
     width: calc(100% - 20px);
     margin: 10px;
-    font-size: 27px;
+    font-size: 25px;
     text-align: center;
     background-color: black;
     list-style: none;
@@ -174,7 +174,7 @@ footer {
 }
 
 .instagram-footer h3 {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .instagram-footer img {
@@ -186,7 +186,7 @@ footer {
 }
 
 .mapa-escuela h3{
-    font-size: 35px;
+    font-size: 30px;
 }
 
 
