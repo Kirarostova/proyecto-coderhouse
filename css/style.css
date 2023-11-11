@@ -10,6 +10,7 @@
 body {
     background-color: gold;
 }
+
 /*! -------- HEADER ------*/
 
 header {
@@ -54,9 +55,7 @@ header div nav ul a {
     color: black;
 }
 
-
 /*! -------- MAIN ------*/
-
 
 .texto-bienvenida {
     border: 5px solid black;
@@ -82,8 +81,8 @@ header div nav ul a {
 }
 
 .carousel-image {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: auto;
 }
 
 .carousel-inner .carousel-item {
@@ -96,7 +95,7 @@ header div nav ul a {
     flex: 1;
     margin-right: 20px;
     padding: 25px;
-    font-size: 12px;
+    font-size: 17px;
     background-size: 100%;
     background-color: white;
     border: 5px solid black;
@@ -116,6 +115,11 @@ header div nav ul a {
     background-color: white;
     border: 7px solid black;
     border-radius: 20%;
+    transition: background-color 0.3s ease;
+}
+
+.instrumentos-index div:hover {
+    background-color: black;
 }
 
 .instrumentos-index div img {
@@ -138,57 +142,6 @@ header div nav ul a {
     justify-content: center;
     text-align: center;
 }
-
-
-
-
-/*! -------- FOOTER ------*/
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: black;
-    color: white;
-}
-
-.horarios{
-    height: 280px;
-    border: 7px solid white;
-}
-
-.horarios ul {
-    width: calc(100% - 20px);
-    margin: 10px;
-    font-size: 25px;
-    text-align: center;
-    background-color: black;
-    list-style: none;
-    border: 1px solid white;
-    padding: 10px;
-}
-
-.instagram-footer {
-    text-align: center;
-}
-
-.instagram-footer h3 {
-    font-size: 40px;
-}
-
-.instagram-footer img {
-    max-width: 100%;
-}
-
-.mapa-escuela {
-    text-align: center;
-}
-
-.mapa-escuela h3{
-    font-size: 30px;
-}
-
 
 /* SOBRE LA ESCUELA */
 
@@ -256,7 +209,7 @@ footer {
 
 .excel-horarios{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -269,10 +222,15 @@ footer {
     height: 85%;
 }
 
-
-
-
-
+.download-btn {
+    margin: 10px;
+    padding: 20px; 
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 /* CONTACTO */
 
@@ -283,9 +241,84 @@ footer {
     margin: 20px;
 }
 
+.cuadro-contacto h2 {
+    font-size: 40px;
+}
 
+.instrumentos-container {
+    column-count: 3;
+    column-gap: 20px;
+}
 
-/* MEDIA QUERY (siempre aplicarlo ANTES que se rompa el sitio) */
+.instrumentos-container label {
+    font-size: 20px;
+    display: block;
+}
+
+/*! -------- FOOTER ------*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.section-footer {
+    flex: 1;
+    min-width: 300px;
+}
+
+.horarios{
+    height: 280px;
+    border: 7px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.horarios ul {
+    width: 100%;
+    margin: 10px;
+    font-size: 25px;
+    text-align: center;
+    background-color: black;
+    list-style: none;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.instagram-footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.instagram-footer h3 {
+    font-size: 40px;
+}
+
+.instagram-footer img {
+    max-width: 100%;
+}
+
+.mapa-escuela {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.mapa-escuela h3{
+    font-size: 30px;
+}
+
+/* MEDIA QUERY */
 
 @media screen and (max-width: 1366px) {
     .texto-bienvenida h2 {
@@ -297,7 +330,7 @@ footer {
         text-align: center;
     }
     .descripcion p {
-        margin: 15px;
+        margin: 15px 0;
     }
 
     .consultas-instrumentos{
@@ -321,6 +354,18 @@ footer {
         max-width: 75%;
     }
 
+    .galeria-imagenes div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cuadro-contacto form div {
+        margin: 15px ;
+    }
+
+    .boton-enviar-restablecer input {
+        margin: 40px;
+    }
     
 }
 
@@ -379,11 +424,6 @@ footer {
         font-size: 50px;
     }
 
-    .galeria-imagenes div {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 500px);
-        grid-gap: 10px;
-    }
     
     .galeria-imagenes div img {
         width: 95%;
@@ -409,9 +449,4 @@ footer {
         font-size: 38px;
     }
 
-    .galeria-imagenes div {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(9, 500px);
-        grid-gap: 0;
-    }
 }
