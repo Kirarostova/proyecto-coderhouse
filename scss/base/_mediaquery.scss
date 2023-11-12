@@ -1,0 +1,186 @@
+@media screen and (max-width: 1366px) {
+    .texto-bienvenida {
+
+        h2 {
+            font-size: 45px;
+        }
+    }
+
+    .descripcion {
+        display: block;
+        text-align: center;
+    
+        p {
+            margin: 15px 0;
+        }
+    }
+
+    .consultas-instrumentos {
+        display: none; // Puse "display: none;" ya que no sabía cómo modificar solo este elemento
+    }
+
+    footer {
+        flex-wrap: nowrap;
+    }
+
+    .horarios {
+
+        ul {
+            font-size: 23px;
+        }
+    }
+
+    .mapa-escuela {
+
+        h3 {
+            font-size: 15px;
+        }
+    }
+
+    .historia-escuela {
+
+        img {
+            max-width: 75%;
+        }
+    }
+
+    .galeria-imagenes {
+        
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .cuadro-contacto {
+
+        form{
+
+            div {
+                margin: 15px;
+            }
+        }
+    }
+
+    .boton-enviar-restablecer {
+        input {
+            margin: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    
+
+        div {
+            margin: 10px;
+        }
+
+            img {
+                order: 1;
+                margin-bottom: 10px;
+            }
+
+            h1 {
+                order: 2;
+                font-size: 30px;
+            }
+
+            nav { 
+                
+                ul {
+                    flex-direction: row;
+                
+                    li {
+                        margin: 5px;
+                    
+                        a {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+
+    footer {
+        flex-direction: column;
+    
+        section {
+            margin: 20px;
+        }
+    }
+
+    .horarios {
+        flex: 1;
+        border: 7px solid white;
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .instagram-footer {
+        
+        h3 {
+            font-size: 40px;
+        }
+    }
+
+    .galeria-imagenes {
+        
+        h2 {
+            font-size: 50px;
+        }
+    }
+    
+    .galeria-imagenes {
+        
+        div {
+            
+            img {
+                width: 95%;
+                height: 55%;
+            }
+        }
+    }      
+    
+    .excel-horarios {
+        img {
+            height: 50%;
+        }
+    } 
+}
+
+@media (max-width: 480px) {
+
+    header {
+
+        div {
+
+            h1 {
+                font-size: 20px;
+            }
+    
+            nav{
+                
+                ul{
+
+                    li{
+
+                        a {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .texto-bienvenida {
+
+        h2 {
+            font-size: 38px;
+        }
+    }
+
+}
