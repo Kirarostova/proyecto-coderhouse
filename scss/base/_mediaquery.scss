@@ -88,16 +88,19 @@
                 font-size: 30px;
             }
 
-            nav { 
+            div{
+
+                nav { 
                 
-                ul {
-                    flex-direction: row;
+                    ul {
+                        flex-direction: row;
                 
-                    li {
-                        margin: 5px;
+                        li {
+                            margin: 5px;
                     
-                        a {
-                            font-size: 18px;
+                            a {
+                                font-size: 18px;
+                            }
                         }
                     }
                 }

@@ -270,11 +270,11 @@ footer {
     header h1 {
       order: 2;
       font-size: 30px; }
-    header nav ul {
+    header div nav ul {
       flex-direction: row; }
-      header nav ul li {
+      header div nav ul li {
         margin: 5px; }
-        header nav ul li a {
+        header div nav ul li a {
           font-size: 18px; }
   footer {
     flex-direction: column; }
