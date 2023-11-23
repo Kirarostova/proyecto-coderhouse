@@ -1,7 +1,7 @@
 /*! -------- MAIN ------*/
 
 .texto-bienvenida {
-  border: 5px solid black;
+  
   text-align: center;
   margin: 40px;
   background-image: url("../img/eemp-logo.jpg");
@@ -10,10 +10,11 @@
   background-position: center;
 
   h2 {
+    border: 5px solid black;
     color: white;
     text-shadow: 7px 7px 7px black;
     background-color: rgba(0, 0, 0, 0.689);
-    font-size: 55px;
+    font-size: 60px;
   }
 }
 
@@ -22,7 +23,7 @@
   align-items: center;
   gap: 20px;
 
-  p {
+  .texto-descripcion {
     width: 100%;
     height: 100%;
     flex: 1;
@@ -35,14 +36,6 @@
   }
 }
 
-.carousel-image {
-  width: 100%;
-  height: auto;
-}
-
-.carousel-inner .carousel-item {
-  transition: none;
-}
 
 .instrumentos-index {
   display: flex;
@@ -61,6 +54,9 @@
 
     &:hover {
       background-color: black;
+      h3 {
+        color: white;
+      }
     }
 
     img {
@@ -83,6 +79,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
 }
 
 /* SOBRE LA ESCUELA */

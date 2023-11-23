@@ -70,43 +70,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
     
-
-        div {
-            margin: 10px;
-        }
-
-            img {
-                order: 1;
-                margin-bottom: 10px;
-            }
-
-            h1 {
-                order: 2;
-                font-size: 30px;
-            }
-
-            div{
-
-                nav { 
-                
-                    ul {
-                        flex-direction: row;
-                
-                        li {
-                            margin: 5px;
-                    
-                            a {
-                                font-size: 18px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
     footer {
         flex-direction: column;
     
@@ -156,28 +120,7 @@
 
 @media (max-width: 480px) {
 
-    header {
-
-        div {
-
-            h1 {
-                font-size: 20px;
-            }
     
-            nav{
-                
-                ul{
-
-                    li{
-
-                        a {
-                            font-size: 13px;
-                        }
-                    }
-                }
-            }
-        }
-    }
 
     .texto-bienvenida {
 

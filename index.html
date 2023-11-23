@@ -4,33 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos.css">
     <title>Escuela Experimental de Música Popular</title>
     <link rel="shortcut icon" href="./img/favicon-eemp.png" type="image/x-icon">
-    <meta name="keywords" content="Escuela de música, Academia musical, Cursos de música, Enseñanza musical, Aprender música, Taller de música, Guitarra, Clases de guitarra, Profesor de guitarra, Instrumentos musicales, Horarios de clases, Avenida Rivadavia, Escuela Experimental de Música Popular, Canto, Clases de canto, Profesor de canto, Bajo, Clases de bajo, Profesor de bajo, Teclado, Clases de teclado, Profesor de teclado, Batería, Clases de batería, Profesor de batería">
+    <meta name="keywords"
+        content="Escuela de música, Academia musical, Cursos de música, Enseñanza musical, Aprender música, Taller de música, Guitarra, Clases de guitarra, Profesor de guitarra, Instrumentos musicales, Horarios de clases, Avenida Rivadavia, Escuela Experimental de Música Popular, Canto, Clases de canto, Profesor de canto, Bajo, Clases de bajo, Profesor de bajo, Teclado, Clases de teclado, Profesor de teclado, Batería, Clases de batería, Profesor de batería">
     <meta name="description" content="¡Sumate a nuestras clases de música con el instrumento que vos quieras!">
 </head>
 
 <body>
     <header>
-        <div>
+        <section class="logo-escuela">
             <img src="./img/eemp-logo-recortado.jpg" alt="logo escuela">
-        </div>
-        <div>
-            <h1>Escuela Experimental de Música Popular</h1>
-        </div>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="./pages/sobre-la-escuela.html">Sobre la escuela</a></li>
-                    <li><a href="./pages/instrumentos-y-profesores.html">Instrumentos y profesores</a></li>
-                    <li><a href="./pages/dias-y-horarios.html">Días y horarios</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
+        </section>
+        <section class="titulo-escuela">
+            <h1> Escuela Experimental de Música Popular</h1>
+        </section>
+        <section>
+            <nav class="navbar navbar-expand-lg" style="background-color:white;">
+                <div class="container-fluid d-flex justify-content-center align-items-center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/sobre-la-escuela.html">Sobre la escuela</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/instrumentos-y-profesores.html">Instrumentos y
+                                    profesores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/dias-y-horarios.html">Días y horarios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-        </div>
+        </section>
     </header>
 
     <main>
@@ -41,32 +62,70 @@
             <div id="carouselExampleFade" class="carousel slide carousel-fade">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./img/imagen-carrousel-uno.jpg" class="d-block w-100 carousel-image" alt="imagen de guitarrista">
+                        <img src="./img/imagen-carrousel-uno.jpg" class="d-block w-100 max-height-300 carousel-image"
+                            alt="imagen de guitarrista">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/imagen-carrousel-dos.jpg" class="d-block w-100 carousel-image" alt="imagen de cantantes y bajista de fondo">
+                        <img src="./img/imagen-carrousel-dos.jpg" class="d-block w-100 max-height-300 carousel-image"
+                            alt="imagen de cantantes y bajista de fondo">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/imagen-carrousel-tres.jpg" class="d-block w-100 carousel-image" alt="imagen de cantantes y guitarrista">
+                        <img src="./img/imagen-carrousel-tres.jpg" class="d-block w-100 max-height-300 carousel-image"
+                            alt="imagen de cantantes y guitarrista">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/imagen-carrousel-cuatro.jpg" class="d-block w-100 carousel-image" alt="imagen de guitarristas tocando">
+                        <img src="./img/imagen-carrousel-cuatro.jpg" class="d-block w-100 max-height-300 carousel-image"
+                            alt="imagen de guitarristas tocando">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <p>La EEMP (Escuela Experimental de Música Popular) es una institución arraigada en el corazón del barrio de Villa Luro, y estamos comprometidos con la enseñanza y difusión de la música desde hace más de una década. Durante estos más de 10 años, hemos cultivado un espacio vibrante y acogedor que no solo ofrece educación musical de alta calidad, sino que también se ha convertido en un punto de encuentro para la comunidad local.
-            Nuestra ubicación en el barrio no solo es geográfica, sino que representa nuestra conexión profunda con la comunidad. Creemos en la importancia de abrir nuestras puertas para compartir la belleza y el poder transformador de la música con alumnos de todas las edades y niveles de habilidad. Nos enorgullece ser parte activa de la vida barrial y contribuir al desarrollo cultural de Villa Luro.
-            Una de las maneras en que celebramos el talento y el esfuerzo de nuestros alumnos es a través de nuestra muestra de fin de año, un evento en el que el teatro del APSEE se llena de música, color y emoción. Estas fotos que compartimos son solo una pequeña ventana a la extraordinaria diversidad de talento y creatividad que florece en nuestra escuela. Cada año, nuestros estudiantes tienen la oportunidad de mostrar el fruto de su arduo trabajo y dedicación en un escenario real, lo que es una experiencia enriquecedora y gratificante para ellos y para toda la comunidad.
-            En la EEMP, la variedad de instrumentos que ofrecemos para aprender es amplia y emocionante. Desde la guitarra, el canto, el bajo, la batería hasta el teclado y más, tenemos la intención de proporcionar a nuestros estudiantes un abanico completo de posibilidades para explorar y perfeccionar sus habilidades musicales. Además de dominar la técnica de los instrumentos, nos aseguramos de que cada estudiante adquiera una comprensión sólida del lenguaje musical, brindándoles las herramientas necesarias para expresarse y comunicarse a través de la música.
-            Estamos emocionados y ansiosos por recibirte en nuestra escuela. Ya seas un principiante curioso o un músico experimentado en busca de nuevos desafíos, aquí encontrarás un espacio donde la pasión por la música se combina con la educación de calidad. ¡Te invitamos a ser parte de nuestra comunidad musical en la EEMP y a descubrir todo lo que la música tiene para ofrecer! </p>
+            <div class="texto-descripcion">
+                <p>La EEMP (Escuela Experimental de Música Popular) es una institución arraigada en el corazón del
+                    barrio de
+                    Villa Luro, y estamos comprometidos con la enseñanza y difusión de la música desde hace más de una
+                    década. Durante estos más de 10 años, hemos cultivado un espacio vibrante y acogedor que no solo
+                    ofrece
+                    educación musical de alta calidad, sino que también se ha convertido en un punto de encuentro para
+                    la
+                    comunidad local.</p>
+                <p>Nuestra ubicación en el barrio no solo es geográfica, sino que representa nuestra conexión profunda
+                    con
+                    la comunidad. Creemos en la importancia de abrir nuestras puertas para compartir la belleza y el
+                    poder
+                    transformador de la música con alumnos de todas las edades y niveles de habilidad. Nos enorgullece
+                    ser
+                    parte activa de la vida barrial y contribuir al desarrollo cultural de Villa Luro.</p>
+                <p>Una de las maneras en que celebramos el talento y el esfuerzo de nuestros alumnos es a través de
+                    nuestra
+                    muestra de fin de año, un evento en el que el teatro del APSEE se llena de música, color y emoción.
+                    Estas fotos que compartimos son solo una pequeña ventana a la extraordinaria diversidad de talento y
+                    creatividad que florece en nuestra escuela. Cada año, nuestros estudiantes tienen la oportunidad de
+                    mostrar el fruto de su arduo trabajo y dedicación en un escenario real, lo que es una experiencia
+                    enriquecedora y gratificante para ellos y para toda la comunidad.</p>
+                <p>En la EEMP, la variedad de instrumentos que ofrecemos para aprender es amplia y emocionante. Desde la
+                    guitarra, el canto, el bajo, la batería hasta el teclado y más, tenemos la intención de proporcionar
+                    a
+                    nuestros estudiantes un abanico completo de posibilidades para explorar y perfeccionar sus
+                    habilidades
+                    musicales. Además de dominar la técnica de los instrumentos, nos aseguramos de que cada estudiante
+                    adquiera una comprensión sólida del lenguaje musical, brindándoles las herramientas necesarias para
+                    expresarse y comunicarse a través de la música.</p>
+                <p>Estamos emocionados y ansiosos por recibirte en nuestra escuela. Ya seas un principiante curioso o un
+                    músico experimentado en busca de nuevos desafíos, aquí encontrarás un espacio donde la pasión por la
+                    música se combina con la educación de calidad. ¡Te invitamos a ser parte de nuestra comunidad
+                    musical en
+                    la EEMP y a descubrir todo lo que la música tiene para ofrecer!</p>
+            </div>
         </section>
         <section class="instrumentos-index">
             <div class="canto">
@@ -103,7 +162,7 @@
     <footer>
         <section class="section-footer">
             <div class="horarios">
-                <ul>
+                <ul> <!-- horarios estimativos, no son los reales -->
                     <li>Lunes: 16 a 20 hs</li>
                     <li>Martes: 16 a 20 hs</li>
                     <li>Miércoles: 16 a 20 hs</li>
@@ -123,7 +182,7 @@
             </div>
         </section>
         <section class="section-footer">
-            <div>
+            <div class="mapa-escuela">
                 <h3>Ubicación de la escuela: Avenida Rivadavia 9545, Local 8</h3>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.6754797035761!2d-58.49926413033864!3d-34.63697229488834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9f6192ba2d5%3A0xb2c94d2135dd6bf4!2sEEMP%20Escuela%20de%20M%C3%BAsica!5e0!3m2!1ses-419!2sar!4v1695774764924!5m2!1ses-419!2sar"
@@ -133,7 +192,9 @@
         </section>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 </body>
 
