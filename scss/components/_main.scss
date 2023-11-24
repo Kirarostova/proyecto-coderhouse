@@ -10,8 +10,8 @@
   background-position: center;
 
   h2 {
-    border: 5px solid black;
-    color: white;
+    border: 5px solid $color-terciario;
+    color:$color-secundario;
     text-shadow: 7px 7px 7px black;
     background-color: rgba(0, 0, 0, 0.689);
     font-size: 60px;
@@ -29,10 +29,10 @@
     flex: 1;
     margin-right: 20px;
     padding: 25px;
-    font-size: 17px;
+    font-size: 100%;
     background-size: 100%;
-    background-color: white;
-    border: 5px solid black;
+    background-color:$color-secundario;
+    border: 5px solid $color-terciario;
   }
 }
 
@@ -47,28 +47,28 @@
     margin: 10px;
     padding: 10px;
     text-align: center;
-    background-color: white;
-    border: 7px solid black;
+    background-color:$color-secundario;
+    border: 7px solid $color-terciario;
     border-radius: 20%;
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: black;
+      background-color: $color-terciario;
       h3 {
-        color: white;
+        color:$color-secundario;
       }
     }
 
     img {
       margin: 5%;
-      border: 7px solid black;
+      border: 7px solid $color-terciario;
       border-radius: 20%;
     }
 
     a {
       margin-bottom: 20px;
       color: black;
-      background-color: gold;
+      background-color:$color-primario;
     }
   }
 }
@@ -88,16 +88,17 @@
   text-align: center;
 
   img {
+    margin: 20px;
     max-width: 100%;
   }
 
   div {
-    background-color: white;
-    border: 5px solid black;
+    background-color:$color-secundario;
+    border: 5px solid $color-terciario;
     margin: 10px;
     
     p {
-      font-size: 30px;
+      font-size: 25px;
     }
   }
 }
@@ -118,7 +119,7 @@
     img {
       width: 95%;
       height: 95%;
-      border: 5px solid black;
+      border: 5px solid $color-terciario;
       box-shadow: 5px 5px 5px gray;
       transition: transform 0.2s;
 
@@ -135,8 +136,8 @@
   display: flex;
   align-items: center;
   margin: 10px;
-  background-color: white;
-  border: 7px solid black;
+  background-color:$color-secundario;
+  border: 7px solid $color-terciario;
 
   img {
     max-width: 50%;
@@ -160,7 +161,7 @@
   padding: 10px;
 
   img {
-    border: 10px solid black;
+    border: 10px solid $color-terciario;
     width: 85%;
     height: 85%;
   }
@@ -168,8 +169,7 @@
   .download-btn {
     margin: 10px;
     padding: 20px;
-    background-color: #4CAF50;
-    color: white;
+    color:$color-secundario;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -179,22 +179,49 @@
 /* CONTACTO */
 
 .cuadro-contacto {
+  width: 400px;
+  margin: 20px auto;
   text-align: center;
-  background-color: white;
-  border: 3px solid black;
-  margin: 20px;
+  background-color:$color-secundario;
+  border: 3px solid $color-terciario;
+  padding: 20px;
 
   h2 {
     font-size: 40px;
   }
 
-  .instrumentos-container {
-    column-count: 3;
-    column-gap: 20px;
+  form {
+    
+    div {
 
-    label {
-      font-size: 20px;
-      display: block;
+      .form-control-lg {
+        display: inline-block;
+        width: 250px;
+        text-align: center;
+        margin-right: 10px;
+    }
+    
+    }
+
+    div {
+
+      .form-select-lg{
+        display: inline-block;
+        width: 250px;
+        text-align: center;
+        margin-right: 10px;
+      }
+    }
+    
+    div {
+
+      button {
+        color: $color-terciario;
+        background-color: $color-primario;
+        border: $color-primario;
+        margin: 20px;
+      }
     }
   }
+
 }

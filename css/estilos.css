@@ -50,7 +50,7 @@ header {
     flex: 1;
     margin-right: 20px;
     padding: 25px;
-    font-size: 17px;
+    font-size: 100%;
     background-size: 100%;
     background-color: white;
     border: 5px solid black; }
@@ -92,13 +92,14 @@ header {
 .historia-escuela {
   text-align: center; }
   .historia-escuela img {
+    margin: 20px;
     max-width: 100%; }
   .historia-escuela div {
     background-color: white;
     border: 5px solid black;
     margin: 10px; }
     .historia-escuela div p {
-      font-size: 30px; }
+      font-size: 25px; }
 
 .galeria-imagenes h2 {
   text-align: center;
@@ -148,7 +149,6 @@ header {
   .excel-horarios .download-btn {
     margin: 10px;
     padding: 20px;
-    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
@@ -156,18 +156,29 @@ header {
 
 /* CONTACTO */
 .cuadro-contacto {
+  width: 400px;
+  margin: 20px auto;
   text-align: center;
   background-color: white;
   border: 3px solid black;
-  margin: 20px; }
+  padding: 20px; }
   .cuadro-contacto h2 {
     font-size: 40px; }
-  .cuadro-contacto .instrumentos-container {
-    column-count: 3;
-    column-gap: 20px; }
-    .cuadro-contacto .instrumentos-container label {
-      font-size: 20px;
-      display: block; }
+  .cuadro-contacto form div .form-control-lg {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    margin-right: 10px; }
+  .cuadro-contacto form div .form-select-lg {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    margin-right: 10px; }
+  .cuadro-contacto form div button {
+    color: black;
+    background-color: gold;
+    border: gold;
+    margin: 20px; }
 
 /*! -------- FOOTER ------*/
 footer {
@@ -216,11 +227,8 @@ footer {
 @media screen and (max-width: 1366px) {
   .texto-bienvenida h2 {
     font-size: 45px; }
-  .descripcion {
-    display: block;
-    text-align: center; }
-    .descripcion p {
-      margin: 15px 0; }
+  .descripcion .texto-descripcion {
+    margin: 15px 0; }
   .consultas-instrumentos {
     display: none; }
   footer {
@@ -240,6 +248,20 @@ footer {
     margin: 40px; } }
 
 @media screen and (max-width: 768px) {
+  header {
+    flex-direction: column; }
+  section nav div div .navbar-nav {
+    flex-direction: row; }
+    section nav div div .navbar-nav .nav-link {
+      font-size: 14px;
+      margin: 10px; }
+  .titulo-escuela h1 {
+    font-size: 40px; }
+  .descripcion {
+    display: flex;
+    flex-direction: column; }
+    .descripcion .texto-descripcion {
+      margin: 15px 0; }
   footer {
     flex-direction: column; }
     footer section {
@@ -260,5 +282,7 @@ footer {
     height: 50%; } }
 
 @media (max-width: 480px) {
+  header .titulo-escuela h1 {
+    font-size: 30px; }
   .texto-bienvenida h2 {
     font-size: 38px; } }

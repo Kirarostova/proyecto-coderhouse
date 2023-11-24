@@ -7,10 +7,8 @@
     }
 
     .descripcion {
-        display: block;
-        text-align: center;
-    
-        p {
+        
+        .texto-descripcion {
             margin: 15px 0;
         }
     }
@@ -70,6 +68,48 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    header{
+        flex-direction: column;
+    }
+
+    section {
+
+        nav{
+
+            div{
+
+                div{
+                    
+                    .navbar-nav {
+                        flex-direction: row;
+                        
+                        .nav-link {
+                            font-size: 14px;
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .titulo-escuela {
+
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    .descripcion {
+        display: flex;
+        flex-direction: column;
+        
+        .texto-descripcion {
+            margin: 15px 0;
+        }
+    }
     
     footer {
         flex-direction: column;
@@ -120,7 +160,15 @@
 
 @media (max-width: 480px) {
 
-    
+    header {
+
+        .titulo-escuela {
+
+            h1 {
+                font-size: 30px;
+            }
+        }
+    }    
 
     .texto-bienvenida {
 
