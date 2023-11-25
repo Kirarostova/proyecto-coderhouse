@@ -1,227 +1,240 @@
 /*! -------- MAIN ------*/
 
-.texto-bienvenida {
+main {
   
-  text-align: center;
-  margin: 40px;
-  background-image: url("../img/eemp-logo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  h2 {
-    border: 5px solid $color-terciario;
-    color:$color-secundario;
-    text-shadow: 7px 7px 7px black;
-    background-color: rgba(0, 0, 0, 0.689);
-    font-size: 60px;
-  }
-}
-
-.descripcion {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-
-  .texto-descripcion {
-    width: 100%;
-    height: 100%;
-    flex: 1;
-    margin-right: 20px;
-    padding: 25px;
-    font-size: 100%;
-    background-size: 100%;
-    background-color:$color-secundario;
-    border: 5px solid $color-terciario;
-  }
-}
-
-
-.instrumentos-index {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-
-  div {
-    width: 250px;
-    margin: 10px;
-    padding: 10px;
+  .texto-bienvenida {
+    
     text-align: center;
-    background-color:$color-secundario;
-    border: 7px solid $color-terciario;
-    border-radius: 20%;
-    transition: background-color 0.3s ease;
+    margin: 40px;
+    background-image: url("../img/eemp-logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
-    &:hover {
-      background-color: $color-terciario;
-      h3 {
-        color:$color-secundario;
-      }
+    h2 {
+      border: 5px solid $color-terciario;
+      color:$color-secundario;
+      text-shadow: 7px 7px 7px black;
+      background-color: rgba(0, 0, 0, 0.689);
+      font-size: 60px;
+    }
+  }
+
+  .descripcion {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .carousel {
+      width: 50%;
+      height: 50%;
     }
 
-    img {
-      margin: 5%;
+    .texto-descripcion {
+      width: 100%;
+      height: 100%;
+      flex: 1;
+      margin-right: 20px;
+      padding: 25px;
+      background-size: 100%;
+      background-color:$color-secundario;
+      border: 5px solid $color-terciario;
+
+      p{
+        font-size: 17px;
+      }
+    }
+  }
+
+
+  .instrumentos-index {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    div {
+      width: 250px;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      background-color:$color-secundario;
       border: 7px solid $color-terciario;
       border-radius: 20%;
-    }
-
-    a {
-      margin-bottom: 20px;
-      color: black;
-      background-color:$color-primario;
-    }
-  }
-}
-
-.consultas-instrumentos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-}
-
-/* SOBRE LA ESCUELA */
-
-.historia-escuela {
-  text-align: center;
-
-  img {
-    margin: 20px;
-    max-width: 100%;
-  }
-
-  div {
-    background-color:$color-secundario;
-    border: 5px solid $color-terciario;
-    margin: 10px;
-    
-    p {
-      font-size: 25px;
-    }
-  }
-}
-
-.galeria-imagenes {
-  h2 {
-    text-align: center;
-    font-size: 70px;
-  }
-
-  div {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 500px 500px 500px;
-    grid-gap: 20px;
-
-    img {
-      width: 95%;
-      height: 95%;
-      border: 5px solid $color-terciario;
-      box-shadow: 5px 5px 5px gray;
-      transition: transform 0.2s;
+      transition: background-color 0.3s ease;
 
       &:hover {
-        transform: scale(1.05);
+        background-color: $color-terciario;
+        h3 {
+          color:$color-secundario;
+        }
+      }
+
+      img {
+        margin: 5%;
+        border: 7px solid $color-terciario;
+        border-radius: 20%;
+      }
+
+      a {
+        margin-bottom: 20px;
+        color: black;
+        background-color:$color-primario;
       }
     }
   }
-}
 
-/* INSTRUMENTOS Y PROFESORES */
+  .consultas-instrumentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-.instrumento {
-  display: flex;
-  align-items: center;
-  margin: 10px;
-  background-color:$color-secundario;
-  border: 7px solid $color-terciario;
-
-  img {
-    max-width: 50%;
   }
 
-  .descripcion-profesor {
-    flex: 1;
-    text-align: left;
+  /* SOBRE LA ESCUELA */
+
+  .historia-escuela {
+    text-align: center;
+
+    img {
+      width: 60%;
+      height: 60%;
+      margin: 20px;
+    }
+
+    div {
+      background-color:$color-secundario;
+      border: 5px solid $color-terciario;
+      margin: 0 150px;
+      padding: 50px;
+      
+      p {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .galeria-imagenes {
+    h2 {
+      text-align: center;
+      font-size: 70px;
+    }
+
+    div {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 500px 500px 500px;
+      grid-gap: 20px;
+
+      img {
+        width: 95%;
+        height: 95%;
+        border: 5px solid $color-terciario;
+        box-shadow: 5px 5px 5px gray;
+        transition: transform 0.2s;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  /* INSTRUMENTOS Y PROFESORES */
+
+  .instrumento {
+    display: flex;
+    align-items: center;
     margin: 10px;
-  }
-}
+    background-color:$color-secundario;
+    border: 7px solid $color-terciario;
 
-/* DÍAS Y HORARIOS */
+    img {
+      max-width: 50%;
+    }
 
-.excel-horarios {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-
-  img {
-    border: 10px solid $color-terciario;
-    width: 85%;
-    height: 85%;
+    .descripcion-profesor {
+      flex: 1;
+      text-align: left;
+      margin: 10px;
+    }
   }
 
-  .download-btn {
-    margin: 10px;
+  /* DÍAS Y HORARIOS */
+
+  .excel-horarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+    img {
+      border: 10px solid $color-terciario;
+      width: 85%;
+      height: 85%;
+    }
+
+    .download-btn {
+      margin: 10px;
+      padding: 20px;
+      color:$color-secundario;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  /* CONTACTO */
+
+  .cuadro-contacto {
+    width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    background-color:$color-secundario;
+    border: 3px solid $color-terciario;
     padding: 20px;
-    color:$color-secundario;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-}
 
-/* CONTACTO */
-
-.cuadro-contacto {
-  width: 400px;
-  margin: 20px auto;
-  text-align: center;
-  background-color:$color-secundario;
-  border: 3px solid $color-terciario;
-  padding: 20px;
-
-  h2 {
-    font-size: 40px;
-  }
-
-  form {
-    
-    div {
-
-      .form-control-lg {
-        display: inline-block;
-        width: 250px;
-        text-align: center;
-        margin-right: 10px;
-    }
-    
+    h2 {
+      font-size: 40px;
     }
 
-    div {
+    form {
+      
+      div {
 
-      .form-select-lg{
-        display: inline-block;
-        width: 250px;
-        text-align: center;
-        margin-right: 10px;
+        .form-control-lg {
+          display: inline-block;
+          width: 250px;
+          text-align: center;
+          margin-right: 10px;
+      }
+      
+      }
+
+      div {
+
+        .form-select-lg{
+          display: inline-block;
+          width: 250px;
+          text-align: center;
+          margin-right: 10px;
+        }
+      }
+      
+      div {
+
+        button {
+          color: $color-terciario;
+          background-color: $color-primario;
+          border: $color-primario;
+          margin: 20px;
+        }
       }
     }
-    
-    div {
 
-      button {
-        color: $color-terciario;
-        background-color: $color-primario;
-        border: $color-primario;
-        margin: 20px;
-      }
-    }
   }
-
 }
